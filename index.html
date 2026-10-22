@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Protocolo</title>
+    <meta name="description" content="Conversa, voz e transmissão de tela para jogar com os amigos." />
+    <link rel="icon" href="icon.png" />
+    <style>
+      :root {
+        --bg: #0f1215;
+        --panel: #161a1f;
+        --raised: #242a32;
+        --border: #2e353e;
+        --text: #e8ecef;
+        --muted: #94a0ab;
+        --accent: #19b394;
+        --accent-strong: #13967c;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at 30% 0%, #173a33 0%, var(--bg) 55%);
+        color: var(--text);
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.5;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 56px 16px 40px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      header img {
+        width: 72px;
+        height: 72px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 40px;
+        letter-spacing: -0.02em;
+      }
+      .tagline {
+        margin: 4px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+      }
+      .download {
+        margin: 36px 0 12px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 14px 26px;
+        border-radius: 10px;
+        background: var(--accent);
+        color: #04140f;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background: var(--accent-strong);
+      }
+      .btn:focus-visible {
+        outline: 3px solid var(--text);
+        outline-offset: 3px;
+      }
+      .small {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      section {
+        margin-top: 36px;
+        padding: 20px 22px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 20px;
+      }
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+      li + li {
+        margin-top: 6px;
+      }
+      kbd {
+        background: var(--raised);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 0 6px;
+        font-size: 14px;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+        list-style: none;
+        padding: 0;
+      }
+      .features li {
+        margin: 0;
+        padding: 12px 14px;
+        background: var(--raised);
+        border-radius: 8px;
+      }
+      footer {
+        margin-top: 32px;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: center;
+      }
+      a {
+        color: #4fb3ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="icon.png" alt="" />
+        <div>
+          <h1>Protocolo</h1>
+          <p class="tagline">Conversa, voz e transmissão de tela para jogar com os amigos.</p>
+        </div>
+      </header>
+
+      <div class="download">
+        <a
+          class="btn"
+          href="https://github.com/cuinha777/protocolo-download/releases/latest/download/Protocolo-Setup.exe"
+          >Baixar para Windows</a
+        >
+        <span class="small">Windows 10 ou 11, 64 bits · cerca de 115 MB</span>
+      </div>
+      <p class="small">
+        Depois de instalado, o Protocolo se atualiza sozinho. Quando sair uma versão nova, ele
+        avisa e pede para reiniciar.
+      </p>
+
+      <section>
+        <h2>Como instalar</h2>
+        <ol>
+          <li>Clique em <strong>Baixar para Windows</strong> e abra o arquivo baixado.</li>
+          <li>
+            O Windows pode mostrar <strong>“O Windows protegeu o computador”</strong>, porque o
+            app é feito pelos próprios amigos e não tem selo de empresa. Clique em
+            <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong>.
+          </li>
+          <li>O Protocolo instala sozinho e cria um atalho na área de trabalho.</li>
+          <li>Crie sua conta no próprio app e peça um convite a quem já está lá.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>O que tem</h2>
+        <ul class="features">
+          <li>Servidores com canais de texto e de voz</li>
+          <li>Transmitir a tela do jogo com o som dele</li>
+          <li>Assistir várias telas ao mesmo tempo</li>
+          <li>Apertar uma tecla para falar, mesmo dentro do jogo</li>
+          <li>Câmera, soundboard e volume por pessoa</li>
+          <li>Mensagens privadas, figurinhas, reações e arquivos</li>
+          <li>Cargos e permissões</li>
+          <li>Mostra o jogo que cada um está jogando</li>
+        </ul>
+      </section>
+
+      <footer>
+        Feito para um grupo de amigos. Não é vendido e não tem relação com outros apps de
+        conversa.
+      </footer>
+    </main>
+  </body>
+</html>
